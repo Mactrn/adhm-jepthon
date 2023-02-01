@@ -79,9 +79,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jepiq.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/6b96d5ea58d065005ec9c.jpg",
-                caption="**᯽︙ بــوت الجوكر يـعـمـل بـنـجـاح ✓ **\n**᯽︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
-                buttons=[(Button.url("سورس الجوكر", "https://t.me/JepthonSupport"),)],
+                "https://telegra.ph/file/daf81d0a51f71987f4eb4.jpg",
+                caption="**᯽︙ بــوت آڷــ؏ــابـث𓃮⇣ۧ⍣≼ٰٖٜٖٖ۬≽  يـعـمـل بـنـجـاح ✓ **\n**᯽︙ ارسل `.الاوامر` لرؤية اوامر السورس**",
+                buttons=[(Button.url("سورس الجوكر", "https://t.me/ALAPATH"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -99,7 +99,7 @@ async def startupmessage():
             message = await jepiq.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**᯽︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت الجوكر تمت بنجاح**"
+                + "\n\n**᯽︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت آڷــ؏ــابـث𓃮⇣ۧ⍣≼ٰٖٜٖٖ۬≽  تمت بنجاح**"
             )
             
             if gvarstatus("restartupdate") is not None:
@@ -122,7 +122,7 @@ async def mybot():
     f"ـ {jep_ment}"
     f"⪼ هذا هو بوت خاص بـ {jep_ment} يمكنك التواصل معه هنا"
     starkbot = await jepiq.tgbot.get_me()
-    perf = "الجوكر 🤡"
+    perf = "العابث"
     bot_name = starkbot.first_name
     botname = f"@{starkbot.username}"
     if bot_name.endswith("Assistant"):
