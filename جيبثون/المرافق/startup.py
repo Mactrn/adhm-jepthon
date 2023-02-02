@@ -281,7 +281,7 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @Jepthon"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @ALAPATH"
         photobt = await jepiq.upload_file(file="JepIQ/razan/resources/start/Jepthon.JPEG")
         _, groupid = await create_supergroup(
             "مجموعة أشعارات الجوكر ", jepiq, Config.TG_BOT_USERNAME, descript, photobt
@@ -307,7 +307,7 @@ async def verifyLoggerGroup():
             LOGS.error("᯽︙PM_LOGGER_GROUP_ID غير مدعوم. تأكد من صحتها.")
         except Exception as e:
             LOGS.error(
-                "⌯︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
+                "استثناءات عند التحقق من PM_LOGGER_GROUP_ID. \ n"  +  str ( e 
             )
     else:
         descript = "᯽︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @Jepthon"
